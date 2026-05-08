@@ -1,0 +1,163 @@
+.app {
+  min-height: 100vh;
+  padding: 40px;
+  background-color: #fff7f9;
+}
+
+/* HEADER */
+
+.header {
+  background: white;
+  padding: 40px;
+  border-radius: 24px;
+  margin-bottom: 30px;
+  text-align: center;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
+}
+
+.header h1 {
+  font-size: 48px;
+  margin-bottom: 10px;
+  color: #d94f70;
+}
+
+.header p {
+  color: #666;
+  font-size: 18px;
+}
+
+/* SECTIONS */
+
+.section {
+  background: white;
+  padding: 30px;
+  border-radius: 24px;
+  margin-bottom: 30px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
+}
+
+.section h2 {
+  margin-bottom: 20px;
+  color: #d94f70;
+}
+
+/* INPUTS */
+
+input {
+  width: 100%;
+  max-width: 300px;
+  padding: 14px;
+  margin: 10px 10px 10px 0;
+  border: 1px solid #f0cdd6;
+  border-radius: 14px;
+  font-size: 16px;
+  outline: none;
+  transition: 0.3s ease;
+}
+
+input:focus {
+  border-color: #d94f70;
+  box-shadow: 0 0 0 3px rgba(217, 79, 112, 0.1);
+}
+
+/* BUTTONS */
+
+button {
+  padding: 14px 22px;
+  border: none;
+  border-radius: 14px;
+  background-color: #d94f70;
+  color: white;
+  font-size: 16px;
+  cursor: pointer;
+  transition: 0.3s ease;
+}
+
+button:hover {
+  background-color: #c53d5f;
+  transform: translateY(-2px);
+}
+
+/* PROJECT GRID */
+
+.projects-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 20px;
+}
+
+/* PROJECT CARD */
+
+.card {
+  background: #ffffff;
+  border-radius: 20px;
+  padding: 25px;
+  border: 1px solid #ffe0e7;
+  transition: 0.3s ease;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 20px rgba(217, 79, 112, 0.12);
+}
+
+.card h3 {
+  color: #d94f70;
+  margin-bottom: 12px;
+}
+
+.card p {
+  color: #555;
+  line-height: 1.6;
+  margin-bottom: 10px;
+}
+
+/* OPTIONAL STATUS BADGES */
+
+.status {
+  display: inline-block;
+  padding: 6px 14px;
+  border-radius: 999px;
+  font-size: 14px;
+  font-weight: 500;
+}
+
+.active {
+  background: #ffe4eb;
+  color: #d94f70;
+}
+
+.completed {
+  background: #e6f7ed;
+  color: #2e8b57;
+}
+
+/* FOOTER */
+
+.footer {
+  text-align: center;
+  padding: 20px;
+  color: #777;
+}
+
+/* MOBILE */
+
+@media (max-width: 768px) {
+
+  .app {
+    padding: 20px;
+  }
+
+  .header h1 {
+    font-size: 34px;
+  }
+
+  .section {
+    padding: 20px;
+  }
+
+  input {
+    max-width: 100%;
+  }
+
+}
